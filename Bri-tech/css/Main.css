@@ -1,0 +1,668 @@
+body {
+    background: linear-gradient(-90deg, #979797, #e9e9e9); /* Standard syntax */
+    background-repeat: no-repeat;
+}
+
+/*.SlaiderContainer{*/
+/*display: flex;*/
+/*margin: 10px auto;*/
+/*max-width: 1200px;*/
+/*}*/
+
+/*Brickets list*/
+.ch-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+
+.ch-info-wrap {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    perspective: 800px;
+    transition: all 0.4s ease-in-out;
+    top: 20px;
+    left: 20px;
+    background: #f9f9f9;
+}
+
+.ch-info {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex: 1 1 100%;
+    border-radius: 15px;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+
+}
+
+.ch-info > div {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-position: center center;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.ch-info .ch-info-back {
+    -webkit-transform: rotate3d(0, 1, 0, 180deg);
+    -moz-transform: rotate3d(0, 1, 0, 180deg);
+    -o-transform: rotate3d(0, 1, 0, 180deg);
+    -ms-transform: rotate3d(0, 1, 0, 180deg);
+    transform: rotate3d(0, 1, 0, 180deg);
+
+    background: #1aa93f;
+}
+
+.ch-info h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin: 0 15px;
+    padding: 20px 0 0 0;
+    height: 90px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-shadow: 0 0 1px #fff,
+    0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.ch-info p {
+    color: #fff;
+    padding: 10px 5px;
+    font-style: italic;
+    margin: 0 30px;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.ch-info p a {
+    display: block;
+    color: #fff;
+    color: rgba(255, 255, 255, 0.7);
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 9px;
+    letter-spacing: 1px;
+    padding-top: 4px;
+    visibility: hidden;
+    visibility: visible;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.ch-info p a:hover {
+    color: #fff222;
+    color: rgba(255, 242, 34, 0.8);
+}
+
+.ch-item:hover .ch-info {
+    -webkit-transform: rotate3d(0, 1, 0, -180deg);
+    -moz-transform: rotate3d(0, 1, 0, -180deg);
+    -o-tranmsform: rotate3d(0, 1, 0, -180deg);
+    -ms-transform: rotate3d(0, 1, 0, -180deg);
+    transform: rotate3d(0, 1, 0, -180deg);
+}
+
+/*brickets list end */
+.VideoContainer {
+
+    margin-top: 20px;
+}
+
+.BanerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.YoutubeContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1% 15%;
+    height: 50%;
+    max-height: 50%;
+}
+
+/*IconContainer start*/
+.IconContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.IconPicture {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex: 1 1 255px;
+    background-color: #f8feff;
+    border-radius: 15px;
+    width: 255px;
+    padding: 0;
+    margin: 15px;
+    height: 264px;
+}
+
+.Beforehover {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    flex: 1 1 100%;
+    background-color: #f8feff;
+    border-radius: 15px;
+    width: 100%;
+    padding: 0;
+    height: 100%;
+}
+
+.ImageS {
+    display: flex;
+    justify-content: center;
+    flex-grow: 8;
+    padding-top: 20px;
+
+}
+
+.jpg {
+    max-width: 160px;
+    max-height: 160px;
+}
+
+.TextS {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+
+}
+
+/*IconContainer end*/
+/*about container start*/
+.AboutUs {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 97%;
+    /*margin:20px auto;*/
+    border-radius: 10px;
+    background-color: #f8feff;
+}
+
+.AboutUs p {
+    text-indent: 30px;
+    padding: 5px 10px;
+    color: black;
+    text-align: justify;
+
+}
+
+/*about container end*/
+/*Description container start*/
+.briketDescription {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content:space-around;
+    flex-wrap:wrap;
+    width: 95%;
+    margin: auto;
+    /*height: auto;*/
+    /*overflow: hidden;*/
+    /*min-height: 15em;*/
+    /*margin: 20px auto;*/
+    border-radius: 10px;
+    background-color: rgba(248, 254, 255, 0.45);
+}
+
+.BriketsImage{
+    flex-basis: 400px;
+    padding: 10px;
+}
+.BriketsImage img{
+    padding: 2px;
+    border: 3px solid #0f0f0f;
+}
+.BriketsText{
+    flex-basis: 500px;
+
+}
+.BriketsMoveText{
+    padding:10px 30px;
+}
+.BriketsMoveText button{
+    float: right;
+    margin: 10px 30px;  }
+.BriketsText button{
+    float: right;
+    margin: -15px 5px 5px 5px;
+
+}
+.boilerDescription {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-content:space-around;
+    flex-wrap:wrap;
+    width: 95%;
+    margin: 40px auto;
+    /*height: auto;*/
+    /*overflow: hidden;*/
+    /*min-height: 15em;*/
+    /*margin: 20px auto;*/
+    border-radius: 10px;
+    background-color: rgba(248, 254, 255, 0.45);
+}
+
+.boilerImage{
+    flex-basis: 400px;
+    padding: 20px;
+}
+.boilerImage img{
+    padding: 2px;
+    border: 3px solid #0f0f0f;
+}
+.boilerText{
+    padding: 20px;
+    text-align: justify;
+    flex-basis: 500px;
+
+}
+.boilerText p{
+    font-size: 18px;
+    color: #440c11;
+    margin: 30px 0;
+}
+.boilerMoveText{
+    padding:10px 30px;
+}
+.boilerMoveText button{
+    float: right;
+    margin: 10px 30px;  }
+.boilerMoveText button{
+    float: right;
+    margin: -15px 5px 5px 5px;
+
+}
+.BriketsText p{
+    font-size: 18px;
+    color: #999999;
+    margin: 30px 0;
+}
+/*.boilerMoveText p{*/
+    /*font-size: 18px;*/
+    /*color: #999999;*/
+    /*margin: 30px 0;*/
+/*}*/
+
+.minimize {
+
+    height: 55%;
+    position: absolute;
+    top: 0;
+}
+
+.briketDescription p {
+    text-indent: 30px;
+    padding: 5px 10px;
+    color: black;
+    text-align: justify;
+}
+
+.briketDescription {
+    padding-right: 30px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+.boilerDescription p {
+    text-indent: 30px;
+    padding: 5px 10px;
+    color: black;
+    text-align: justify;
+}
+
+.briketDescription {
+    padding-right: 30px;
+    font-weight: 400;
+    text-align: justify;
+
+}
+.Title {
+    font-weight: 700;
+}
+
+/*Description container end*/
+
+.ButtonView {
+    margin-left: 86%;
+}
+
+.Contacts {
+    padding: 5px 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 1 1 100%;
+
+}
+
+.Ft1 {
+    flex: 2 1 150px;
+    margin: 10px;
+}
+
+.Ft2 {
+    font-weight: 700;
+    flex: 4 1 200px;
+    margin: 10px;
+}
+
+.Ft3 {
+    flex: 4 1 200px;
+    margin: 10px;
+}
+
+.Ft2Text {
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+.Ft3Text {
+    font-weight: 700;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.Ft3Atag {
+    margin-left: 60px;
+    margin-top: -30px;
+    font-weight: 600;
+}
+
+/*Footer container start*/
+.footer {
+    width: 100%;
+    height: 65px;
+    background-color: #333536;
+}
+.FooterIcons{
+    margin-top: 13px;
+    color: #000000;
+    font-size: 28px;
+}
+.FooterPtag{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #14bf99;
+    margin: 19px 0 0 -70px;
+}
+.FooterAtag{
+    color: #0da357;
+    font-weight: 800;
+    font-size: 1.3em;
+    margin: -25px 0 0 29px;
+}
+.FooterAtag:hover{
+    transition: 0.5s;
+    color: #0494e9;
+}
+.FooterAtag:not(hover){
+    transition: 0.5s;
+    color: #0da357;
+}
+/*footer container end */
+
+/*MapContainer start*/
+.MapContainer {
+    padding: 5px 90px;
+    /*background-color: #0da357;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: center;*/
+    /*flex-wrap: wrap;*/
+}
+
+.map-responsive {
+    border: 2px solid #0b0b0b;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/*MapContainer end*/
+
+/*Menu bar start */
+.minNavbar{
+    visibility: hidden;
+    display: none;
+}
+.HeaderContainer {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #ffffff;
+    height: 65px;
+}
+
+.logo {
+    padding: 5px;
+}
+.logo img{
+    width: 120px;
+    height: 50px;
+}
+.menu {
+    background-color: coral;
+}
+
+.fancy {
+    width: 90%;
+}
+
+.fancy ul {
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+}
+
+.fancy li {
+    background-image: linear-gradient(to bottom, transparent 50%, #a2d39c 50%, #a2d39c 95%, #7cc576 95%);
+    background-size: 100% 200%;
+    background-position: top center;
+    color: #666;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+
+.fancy li:hover {
+    background-position: bottom center;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.fancy li a {
+    font-size: 120%;
+    font-weight: 700;
+    color: #666;
+    text-shadow: 1px 1px rgba(8, 45, 30, 0.31);
+    display: block;
+    padding: 1.6rem 0;
+    transition: all .25s ease-in-out;
+}
+
+[id^='fun'] ul {
+    border: 0;
+    top: 2px;
+    height: 61px;
+    display: flex;
+    padding: 0 2rem;
+    position: relative;
+    left: -2rem;
+    width: calc(100% + 4rem);
+}
+
+.fancy [id^='fun'] ul li {
+    background-image: linear-gradient(to bottom, transparent 50%, #0bcb44 50%, #0ecb42 95%, #01a129 95%);
+    flex: 1 1 auto;
+}
+
+.fancy [id^='fun'] ul li a:hover {
+    color: #eee;
+}
+
+.fancy #fun1 ul li {
+    border-left: 2px solid rgba(7, 67, 16, 0.3);
+    transform: skew(-15deg);
+}
+
+.fancy #fun1 ul li:last-child {
+    border-right: 2px solid rgba(7, 67, 16, 0.3);
+}
+
+.fancy #fun1 ul li a {
+    transform: skew(15deg);
+}
+
+.fancy #fun2 li:hover {
+    transform: scale(1.2);
+}
+.menu__drop{
+    position: absolute;
+    background-color: rgba(46, 46, 64, 0.6);
+    margin-top: 10px;
+    right: 0;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius:10px ;
+    transition: 0.5s opacity;
+}
+.menu__drop a{
+    margin-left: -20px;
+    font-size: 0.7em;
+    color: #ffffff;
+    width: 120px;
+    padding: 10px;
+    display:block;
+    border-bottom:1px solid #666;
+    transition: 0.5s all;
+}
+.menu__drop a:last-child{
+    border-bottom:1px solid #2e2e40;
+
+}
+.minNavbar:hover .menu__drop{
+    opacity: 1;
+}
+/*Menu bar end*/
+
+/*slider container start*/
+.container {
+    margin: 20px auto;
+    width: 100%;
+
+}
+
+/*slider container end*/
+@media (max-width: 801px) {
+    .IconContainer {
+        margin-top: -70px;
+    }
+
+    .IconPicture {
+        margin: 20px 30px;
+    }
+
+    .ch-info p {
+        font-size: 12px;
+    }
+
+    .MapContainer {
+        padding: 10px;
+    }
+    .FooterAtag{
+        margin: -27px 0 0 29px;
+        font-size: 21px;}
+
+}
+@media (max-width: 915px) {
+    .fancy{
+        display: none;
+        visibility: hidden;
+    }
+    .Menu{
+        float: right;
+        margin-top: 15px;
+    }
+    .minNavbar{
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 2px solid #0f0f0f;
+        color: #0f0f0f;
+        font-size: 24px;
+        visibility: visible;
+        display: inline;
+    }
+    .minNavbar:active{
+
+    }
+}
+@media (max-width: 450px) {
+
+    .FooterPtag{
+        font-size: 1.0em;
+        margin: 19px 0 0 -62px;
+    }
+    .FooterAtag{
+        font-size: 1.1em;
+        margin: -21px 0 0 21px;
+    }
+    .BriketsMoveText{
+        padding: 5px;
+    }
+}
