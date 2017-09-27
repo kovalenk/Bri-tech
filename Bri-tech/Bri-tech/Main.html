@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Топливные брикеты Bri-tech</title>
     <link rel="shortcut icon" href="Images/icon.png" type="image/png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" href="css/Main.css"/>
     <link rel="stylesheet" href="darkassets/css/icons.css">
@@ -18,30 +19,35 @@
 </head>
 <body>
 <div class="HeaderContainer" id="head">
-    <div class="logo col-lg-offset-2 col-md-offset-2 col-xs-offset-1 col-sm-offset-1 col-xs-2 col-sm-2 col-md-2 col-lg-2">
-        <img src="Images/templatemo_logo.png" height="135" width="389"/>
-    </div>
-    <div class="Menu col-lg-offset-1 col-lg-offset-1 col-xs-offset-1 col-sm-offset-1 col-xs-7 col-sm-7 col-md-7 col-lg-7">
-        <section class="fancy">
-            <nav id="fun1">
-                <ul>
-                    <li><a href="#" title="Home" onclick="ShowScroll(head)">Домашняя</a></li>
-                    <li><a href="#" title="Blog" onclick="ShowScroll(AllSalesObjects)">Продукция</a></li>
-                    <li><a href="#" title="Work" onclick="ShowScroll(briketdescription)">Описание продукции</a></li>
-                    <li><a href="#" title="Resources" onclick="ShowScroll(Contacts)">Контакты</a></li>
-                </ul>
-            </nav>
-        </section>
-        <div class="minNavbar col-xs-offset-8 col-sm-offset-9">
-                <i class="zmdi zmdi-menu"></i>
-                    <ul class="menu__drop">
-                        <a href="#" title="Home" onclick="ShowScroll(head)">Домашняя</a>
-                        <a href="#" title="Blog" onclick="ShowScroll(AllSalesObjects)">Продукция</a>
-                        <a href="#" title="Work" onclick="ShowScroll(briketdescription)">Описание</a>
-                        <a href="#" title="Resources" onclick="ShowScroll(Contacts)">Контакты</a>
+    <div class="container Elements">
+        <div class="logo col-lg-offset-1 col-md-offset-1  col-sm-offset-1 col-xs-3 col-sm-1 col-md-1 col-lg-1">
+            <img src="Images/templatemo_logo.png" height="135" width="389"/>
+        </div>
+        <div class="PhoneNumb col-lg-offset-1 col-md-offset-1 col-xs-offset-1 col-sm-offset-2 col-xs-5 col-sm-5 col-md-2 col-lg-3">
+            <p>+38(066)678-83-40</p>
+            <p>+38(098)045-11-39</p>
+            <p>+38(093)936-03-70</p>
+        </div>
+        <div class="Menu col-lg-offset-1 col-md-offset-1 col-sm-offset-1 col-xs-2 col-sm-2 col-md-5 col-lg-5">
+            <section class="fancy">
+                <nav id="fun1">
+                    <ul>
+                        <li><a href="#" title="Home" onclick="ShowScroll(head)">Домашняя</a></li>
+                        <li><a href="#" title="Blog" onclick="ShowScroll(AllSalesObjects)">Продукция</a></li>
+                        <li><a href="#" title="Work" onclick="ShowScroll(briketdescription)">Описание продукции</a></li>
+                        <li><a href="#" title="Resources" onclick="ShowScroll(Contacts)">Контакты</a></li>
                     </ul>
-
-
+                </nav>
+            </section>
+            <div class="minNavbar col-xs-offset-8 col-sm-offset-9">
+                <i class="zmdi zmdi-menu"></i>
+                <ul class="menu__drop">
+                    <a href="#" title="Home" onclick="ShowScroll(head)">Домашняя</a>
+                    <a href="#" title="Blog" onclick="ShowScroll(AllSalesObjects)">Продукция</a>
+                    <a href="#" title="Work" onclick="ShowScroll(briketdescription)">Описание</a>
+                    <a href="#" title="Resources" onclick="ShowScroll(Contacts)">Контакты</a>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
@@ -333,7 +339,7 @@
     </div>
 </div>
 <div class="AboutUs fadeInDown animated">
-    <h4 class="text-center">Почему мы?</h4>
+    <h2 class="text-center">Почему мы?</h2>
     <p>Наша компания занимается производством и продажей высококачественных твердотоплевных брикетов.
         Лучший выбор, цена - качество.
         Оперативная обработка заказа.Доставка по всей Украине.
@@ -397,12 +403,12 @@
 </div>
 <div class="Contacts" id="Contacts">
     <div class="Ft1">
-        <h3 class="text-left">О Bri-tech</h3>
-        <p style="border-left: 4px solid #0b0b0b; padding-left: 10px">Наша компания занимается производством и
+        <h2 class="text-left">О Bri-tech</h2>
+        <p style="border-left: 4px solid #0b0b0b; padding-left: 10px; font-size: 1.3em">Наша компания занимается производством и
             продажей высококачественных твердотоплевных брикетов.</p>
     </div>
     <div class="Ft2">
-        <h3 class="text-center">Сервисы</h3>
+        <h2 class="text-center">Сервисы</h2>
         <i class="zmdi zmdi-circle" style="color: #1aa93f"></i>
         <p class="Ft2Text">Производство брикетов любых видов</p>
         <i class="zmdi zmdi-circle" style="color: #1aa93f"></i>
@@ -413,13 +419,13 @@
         <p class="Ft2Text">Доставка по всей Украине</p>
     </div>
     <div class="Ft3">
-        <h3 class="text-center">Контакты</h3>
+        <h2 class="text-center">Контакты</h2>
         <i class="zmdi zmdi-pin" style="font-size: 3em"></i>
         <p class="Ft3Text">Украина. Кировоградская область. Кировоград</p>
-        <i class="zmdi zmdi-phone" style="font-size: 3em; margin-top: 20px;"></i>
-        <p style=" font-weight: 700; margin-left: 60px; margin-top:-50px;"> +38(066)678-83-40 </p>
-        <p style="font-weight: 700; margin-left: 60px; margin-top:-10px"> +38(098)045-11-39 </p>
-        <p style="font-weight: 700; margin-left: 60px; margin-top:-10px"> +38(093)936-03-70 </p>
+        <i class="zmdi zmdi-phone" style="font-size: 3em; margin-top: 40px;"></i>
+        <p style=" font-weight: 700; font-size: 22px; color:#052f15;  margin-left: 60px; margin-top:-55px;"> +38(066)678-83-40 </p>
+        <p style="font-weight: 700; font-size: 22px; color:#052f15;  margin-left: 60px; margin-top:-15px"> +38(098)045-11-39 </p>
+        <p style="font-weight: 700; font-size: 22px; color:#052f15;  margin-left: 60px; margin-top:-15px"> +38(093)936-03-70 </p>
         <i class="zmdi zmdi-globe" style="font-size: 3em; margin-top: 20px;"></i><a href="http://bri-tech.prom.ua"><p
             class="Ft3Atag"> http://bri-tech.prom.ua</p></a>
 

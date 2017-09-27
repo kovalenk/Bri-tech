@@ -215,6 +215,8 @@ body {
     justify-content: center;
     flex-flow: column;
     width: 97%;
+    font-size: 1.2em;
+    font-weight: 600;
     /*margin:20px auto;*/
     border-radius: 10px;
     background-color: #f8feff;
@@ -260,6 +262,7 @@ body {
 
 }
 .BriketsMoveText{
+    font-size: 1.2em;
     padding:10px 30px;
 }
 .BriketsMoveText button{
@@ -307,6 +310,7 @@ body {
     margin: 30px 0;
 }
 .boilerMoveText{
+    font-size: 1.2em;
     padding:10px 30px;
 }
 .boilerMoveText button{
@@ -398,11 +402,13 @@ body {
 }
 
 .Ft2Text {
+    font-size: 1.3em;
     margin-left: 20px;
     margin-top: -20px;
 }
 
 .Ft3Text {
+    font-size: 1.3em;
     font-weight: 700;
     margin-left: 40px;
     margin-top: -30px;
@@ -411,6 +417,8 @@ body {
 .Ft3Atag {
     margin-left: 60px;
     margin-top: -30px;
+    font-size: 1.5em;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
 }
 
@@ -477,6 +485,7 @@ body {
 
 /*Menu bar start */
 .minNavbar{
+    margin-right: ;
     visibility: hidden;
     display: none;
 }
@@ -488,7 +497,23 @@ body {
     background-color: #ffffff;
     height: 65px;
 }
+.Elements{
+    position: absolute;
+    top: 0;
+}
+.PhoneNumb{
+    margin-top: -2px;
+    /*font-stretch: inherit;*/
+    padding: 10px 5px;
+    /*width: 250px;*/
 
+}
+.PhoneNumb p {
+    font-family: "Cambria Math", sans-serif;
+    line-height: 0.8;
+    font-size: 1em;
+    font-weight: 800;
+}
 .logo {
     padding: 5px;
 }
@@ -640,6 +665,7 @@ body {
         margin-top: 15px;
     }
     .minNavbar{
+        right: 0;
         padding: 5px 10px;
         border-radius: 5px;
         border: 2px solid #0f0f0f;
@@ -648,12 +674,12 @@ body {
         visibility: visible;
         display: inline;
     }
-    .minNavbar:active{
-
-    }
 }
 @media (max-width: 450px) {
 
+    .PhoneNumb p{
+        font-size: 0.8em;
+    }
     .FooterPtag{
         font-size: 1.0em;
         margin: 19px 0 0 -62px;
