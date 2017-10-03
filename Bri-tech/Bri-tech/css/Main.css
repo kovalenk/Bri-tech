@@ -66,6 +66,8 @@ body {
     -ms-backface-visibility: hidden;
     backface-visibility: hidden;
 }
+@import "//fonts.fontstorage.com/import/arnamuserif.css";
+@import "//fonts.fontstorage.com/import/geometric.css";
 
 .ch-info .ch-info-back {
     -webkit-transform: rotate3d(0, 1, 0, 180deg);
@@ -77,25 +79,26 @@ body {
     background: #1aa93f;
 }
 
-.ch-info h3 {
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 14px;
+.ch-info-back h3 {
+    font-family: 'Arian AMU Serif';
+    color: #ffffff;
+    font-size: 22px;
     margin: 0 15px;
-    padding: 20px 0 0 0;
-    height: 90px;
-    font-family: 'Open Sans', Arial, sans-serif;
-    text-shadow: 0 0 1px #fff,
-    0 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px 0 15px 0;
+    font-weight: 700;
+    line-height: 1em;
+    text-shadow: 1px 0px 2px rgba(0,0,0,1);
 }
+.Price p{
 
+    line-height: 1em;
+}
 .ch-info p {
     color: #fff;
     padding: 10px 5px;
     font-style: italic;
     margin: 0 30px;
-    font-size: 14px;
+    font-size: 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -166,11 +169,11 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    flex: 1 1 255px;
+    flex: 1 1 325px;
     background-color: #f8feff;
     border-radius: 15px;
-    width: 255px;
     padding: 0;
+    max-width:365px;
     margin: 15px;
     height: 264px;
 }
@@ -182,7 +185,7 @@ body {
     flex: 1 1 100%;
     background-color: #f8feff;
     border-radius: 15px;
-    width: 100%;
+    max-width:325px
     padding: 0;
     height: 100%;
 }
@@ -196,14 +199,29 @@ body {
 }
 
 .jpg {
-    max-width: 160px;
-    max-height: 160px;
+    margin-top: -10px;
+    max-width: 313px;
+    max-height: 222px;
 }
+@import "//fonts.fontstorage.com/import/gabriela.css";
 
-.TextS {
+    /*background-color: ;*/
+  /**/
+    /*font-size: 44px;*/
+   /**/
+   /**/
+    /*line-height: 1.1em;*/
+    /**/
+    /*margin: 0px 0px 20px 0px;*/
+    /*width: 700px;*/
+/*}*/
+.TextS h3, h4{
+    font-family: 'Gabriela';
+    font-weight: 400;
+    font-variant: small-caps;
     display: flex;
     justify-content: center;
-    flex-grow: 2;
+    flex-grow: 3;
 
 }
 
@@ -484,8 +502,7 @@ body {
 /*MapContainer end*/
 
 /*Menu bar start */
-.minNavbar{
-    margin-right: ;
+.AdaptiveNav{
     visibility: hidden;
     display: none;
 }
@@ -515,16 +532,19 @@ body {
     font-weight: 800;
 }
 .logo {
-    padding: 5px;
+    padding: 10px 0;
 }
 .logo img{
-    width: 120px;
-    height: 50px;
+    width: 130px;
+    height: 48px;
 }
 .menu {
     background-color: coral;
 }
 
+.Menu{
+    padding-left: 25px;
+}
 .fancy {
     width: 90%;
 }
@@ -655,31 +675,79 @@ body {
         font-size: 21px;}
 
 }
-@media (max-width: 915px) {
-    .fancy{
+@media (min-width:884px) and (max-width: 975px){
+    .Menu{
+        padding-left: 0px;
+        margin-left: 50px;
+    }
+}
+@media (min-width:766px) and (max-width: 885px){
+    .PhoneNumb {
+        min-width: 140px
+    }
+}
+@media (min-width:466px) and (max-width: 558px){
+    .PhoneNumb {
+        margin-left: 50px;
+        min-width: 150px
+
+    }
+}
+@media (max-width: 885px) {
+    .Menu{
         display: none;
         visibility: hidden;
     }
-    .Menu{
+    .AdaptiveNav{
         float: right;
-        margin-top: 15px;
-    }
-    .minNavbar{
-        right: 0;
-        padding: 5px 10px;
-        border-radius: 5px;
-        border: 2px solid #0f0f0f;
-        color: #0f0f0f;
         font-size: 24px;
         visibility: visible;
         display: inline;
     }
+    .minNavbar{
+        margin-top: 10px;
+        padding: 7px 12px;
+        border-radius: 5px;
+        border: 2px solid #0f0f0f;
+        color: #0f0f0f;
+    }
 }
-@media (max-width: 450px) {
-
+.container{
+    margin-top: 0;
+    padding: 0 25px;
+}
+@media (max-width:465px) {
+    .PhoneNumb{
+        margin:5px 0 0 55px;
+    }
     .PhoneNumb p{
         font-size: 0.8em;
     }
+    .logo img{
+        width: 110px;
+        height: 40px;
+    }
+    .container{
+        padding: 0 5px;
+    }
+}
+@media (max-width:375px) {
+    .PhoneNumb{
+        margin:5px 0 0 40px;
+    }
+    .PhoneNumb p{
+        font-size: 0.67em;
+    }
+    .logo img{
+        width: 100px;
+        height: 38px;
+    }
+    .container{
+        padding: 0 5px;
+    }
+}
+@media (max-width: 450px) {
+
     .FooterPtag{
         font-size: 1.0em;
         margin: 19px 0 0 -62px;
