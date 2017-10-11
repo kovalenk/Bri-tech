@@ -51,7 +51,31 @@ body {
     transform-style: preserve-3d;
 
 }
+.HoverBK{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    flex-basis: 250px;
 
+}
+.Hover1{
+    flex: 2 2 45px;
+}
+.Hover2{
+    flex: 6 6 160px;
+}
+.Hover3{
+    flex: 2 2 45px;
+    width: 100%;
+}
+.Hover3 p{
+    margin-right: 15px;
+    color: #ebeffa;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.51), 2px 2px 1px rgba(0,0,0,0.5);
+}
 .ch-info > div {
     display: block;
     position: absolute;
@@ -79,7 +103,7 @@ body {
     background: #1aa93f;
 }
 
-.ch-info-back h3 {
+.Hover1 h3 {
     font-family: 'Arian AMU Serif';
     color: #ffffff;
     font-size: 22px;
@@ -89,11 +113,21 @@ body {
     line-height: 1em;
     text-shadow: 1px 0px 2px rgba(0,0,0,1);
 }
+.Hover1 h4 {
+    font-family: 'Arian AMU Serif';
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 15px 0 12px 0;
+    font-weight: 600;
+    line-height: 1em;
+    text-shadow: 1px 0px 2px rgba(0,0,0,1);
+}
 .Price p{
 
     line-height: 1em;
 }
-.ch-info p {
+.Hover2 p {
     color: #fff;
     padding: 10px 5px;
     font-style: italic;
@@ -102,7 +136,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.ch-info p a {
+.Hover2 p a {
     display: block;
     color: #fff;
     color: rgba(255, 255, 255, 0.7);
@@ -117,7 +151,7 @@ body {
     font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.ch-info p a:hover {
+.Hover2 p a:hover {
     color: #fff222;
     color: rgba(255, 242, 34, 0.8);
 }
@@ -182,26 +216,37 @@ body {
     display: flex;
     justify-content: center;
     flex-flow: column;
-    flex: 1 1 100%;
+    flex-basis: 270px;
     background-color: #f8feff;
     border-radius: 15px;
-    max-width:325px
+    max-width:325px;
     padding: 0;
     height: 100%;
+    margin: auto;
+
 }
 
 .ImageS {
-    display: flex;
-    justify-content: center;
-    flex-grow: 8;
-    padding-top: 20px;
-
+    flex: 8 8 208px;
+    margin: auto;
 }
 
+.TextS{
+    flex: 2 2 52px;
+}
+.TextS h3, h4{
+    font-family: 'Gabriela';
+    font-weight: 400;
+    font-variant: small-caps;
+    display: flex;
+    justify-content: center;
+    flex-grow: 3;
+
+}
 .jpg {
-    margin-top: -10px;
+    margin-top: 10px;
     max-width: 313px;
-    max-height: 222px;
+    max-height: 180px;
 }
 @import "//fonts.fontstorage.com/import/gabriela.css";
 
@@ -215,15 +260,7 @@ body {
     /*margin: 0px 0px 20px 0px;*/
     /*width: 700px;*/
 /*}*/
-.TextS h3, h4{
-    font-family: 'Gabriela';
-    font-weight: 400;
-    font-variant: small-caps;
-    display: flex;
-    justify-content: center;
-    flex-grow: 3;
 
-}
 
 /*IconContainer end*/
 /*about container start*/
@@ -618,9 +655,12 @@ body {
     transform: scale(1.2);
 }
 .menu__drop{
+    display: none;
+    visibility: hidden;
     position: absolute;
     background-color: rgba(46, 46, 64, 0.6);
     margin-top: 10px;
+    margin-right: -25px;
     right: 0;
     opacity: 0;
     border-bottom-left-radius: 10px;
@@ -641,7 +681,10 @@ body {
     border-bottom:1px solid #2e2e40;
 
 }
-.minNavbar:hover .menu__drop{
+.AdaptiveNav:hover .menu__drop{
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
     opacity: 1;
 }
 /*Menu bar end*/
@@ -663,9 +706,6 @@ body {
         margin: 20px 30px;
     }
 
-    .ch-info p {
-        font-size: 12px;
-    }
 
     .MapContainer {
         padding: 10px;
@@ -686,11 +726,44 @@ body {
         min-width: 140px
     }
 }
+@media (min-width:300px) and (max-width: 340px){
+    .TextS h3{
+    font-size: 20px;
+    }
+    .TextS h4{
+        font-size: 14px;
+    }
+}
 @media (min-width:466px) and (max-width: 558px){
     .PhoneNumb {
         margin-left: 50px;
         min-width: 150px
 
+    }
+}
+@media (min-width:358px) and (max-width: 400px){
+    .ch-info p {
+        font-size: 13px;
+    }
+}
+@media (min-width:352px) and (max-width: 370px){
+    .jpg {
+        margin-top: 10px;
+        max-width: 263px;
+        max-height: 170px;
+    }
+}
+@media (min-width:312px) and (max-width: 351px){
+    .jpg {
+        margin-top: 10px;
+        max-width: 213px;
+        max-height: 160px;
+    }
+}
+
+@media (min-width:300px) and (max-width: 365px){
+    .ch-info p {
+        font-size: 11px;
     }
 }
 @media (max-width: 885px) {
